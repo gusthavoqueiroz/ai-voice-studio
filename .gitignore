@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.wav
+*.mp3
+*.zip
+models/
+checkpoints/
+outputs/
+jobs/
