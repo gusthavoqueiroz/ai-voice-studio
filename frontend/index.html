@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Valentino AI Studio v2</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Valentino <span>AI Studio</span></h1>
+            <p>Narrações multilíngues com referência de voz</p>
+        </header>
+        <div class="layout">
+            <section class="panel">
+                <h2>Nova narração</h2>
+                <p id="system">Verificando ambiente...</p><label>Áudio de referência (use somente vozes
+                    autorizadas)</label><input id="voice" type="file" accept="audio/*,.mp4"><button id="upload">Enviar
+                    referência</button>
+                <p id="reference"></p><label>Idioma</label><select id="language">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="pt">Português</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                    <option value="zh">中文</option>
+                    <option value="ar">العربية</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="ru">Русский</option>
+                    <option value="nl">Nederlands</option>
+                    <option value="pl">Polski</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="sv">Svenska</option>
+                    <option value="da">Dansk</option>
+                    <option value="fi">Suomi</option>
+                    <option value="no">Norsk</option>
+                    <option value="el">Ελληνικά</option>
+                    <option value="he">עברית</option>
+                    <option value="ms">Bahasa Melayu</option>
+                    <option value="sw">Kiswahili</option>
+                </select><label>Texto do
+                    roteiro</label><textarea id="script" placeholder="Cole seu roteiro aqui..."></textarea>
+                <div class="meta"><span id="count">0 caracteres</span><span>Máximo 250.000</span></div><button
+                    class="primary" id="generate">Gerar narração</button>
+                <p class="hint">Processamento local em CPU pode demorar bastante. Faça primeiro um teste curto.</p>
+            </section>
+            <section class="panel">
+                <h2>Suas gerações</h2>
+                <div id="jobs">Nenhum trabalho ainda.</div>
+            </section>
+        </div>
+    </main>
+    <script>
+        window.API_BASE_URL = "";
+    </script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
