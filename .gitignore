@@ -11,3 +11,8 @@ models/
 checkpoints/
 outputs/
 jobs/
+data/
+*.wav
+*.mp3
+.env
+.env.*
