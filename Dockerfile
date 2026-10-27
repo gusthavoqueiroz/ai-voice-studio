@@ -9,7 +9,9 @@ RUN apt-get update && \
 
 RUN pip install --no-cache-dir \
     runpod \
-    chatterbox-tts
+    chatterbox-tts \
+    requests \
+    boto3
 
 COPY handler.py /app/handler.py
 
